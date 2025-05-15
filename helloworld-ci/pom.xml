@@ -3,4 +3,19 @@
   <groupId>com.example</groupId>
   <artifactId>helloworld-ci</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <version>3.8.1</version> <!-- or latest -->
+      <configuration>
+        <source>1.8</source> <!-- or 11, 17 depending on your JDK -->
+        <target>1.8</target>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
+
 </project>
